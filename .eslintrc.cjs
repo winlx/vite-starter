@@ -1,4 +1,8 @@
 const commonRules = {
+  'react-refresh/only-export-components': [
+    'warn',
+    { allowConstantExport: true },
+  ],
   'import/prefer-default-export': 'off',
   'import/no-default-export': 'error',
   'react/jsx-props-no-spreading': 'off',
@@ -42,6 +46,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
   ],
+  plugins: ['react-refresh'],
   parserOptions: {
     project: ['./tsconfig.json', './tsconfig.node.json'],
   },
